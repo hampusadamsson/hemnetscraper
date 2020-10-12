@@ -1,6 +1,6 @@
 # Hemnetscraper
 This is a webscraper that crawls Hemnet - https://www.hemnet.se/. 
-Use the output from the script **result.csv** to perform your analysis or data driven development.
+Use the output from the script **result.csv** to perform your analysis or data driven development. There is an example notbook and example data in the analysis directory.
 
 Happy hacking!
 
