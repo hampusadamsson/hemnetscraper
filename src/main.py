@@ -2,9 +2,14 @@ import sys
 sys.path.append('src')
 from Crawler import Crawler
 from Parser import Parser
-
+import os
 import argparse
 
+try:
+    os.mkdir("resources")
+    os.mkdir("resources/objects")
+except:
+    pass
 
 parser = argparse.ArgumentParser(description='A Python based Hemnet parser. Fetch N number of Hemnet listings (n = 1 '
                                              'to 1000)')
