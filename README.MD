@@ -8,7 +8,7 @@ Happy hacking!
 ```python
 $ git clone https://github.com/hampusadamsson/hemnetscraper.git
 $ cd hemnetscraper
-$ pip3 install -r requirements.txt 
+$ pip3 install -r requirement.txt
 $ python3 src/main.py -n 50 
 ```
 

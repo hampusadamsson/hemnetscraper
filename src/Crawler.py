@@ -9,7 +9,7 @@ class Crawler:
         print("Crawling Hemnet")
         self.links = []
         print("Fetching listings...[1/2]")
-        self.fetch_links(listings_to_fetch)
+        self.fetch_links(min(50, listings_to_fetch))
         self.save_links()
         print("Collecting objects...[2/2]")
         self.fetch_objects_from_links()
