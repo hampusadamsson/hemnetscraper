@@ -19,5 +19,8 @@ args = parser.parse_args()
 n = args.n
 
 if __name__ == '__main__':
-    c = Crawler(max(1, int(n/50)))
+    crawls = min(n, 50)
+    if crawls <= 0:
+        crawls = 1
+    c = Crawler(crawls)
     p = Parser()
