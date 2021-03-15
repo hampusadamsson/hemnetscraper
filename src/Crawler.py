@@ -26,7 +26,7 @@ class Crawler:
         links = []
         for page_n in tqdm(range(n_calls)):
             conn = http.client.HTTPSConnection("www.hemnet.se")
-            conn.request("GET", "/salda/bostader?page=".format(page_n), '', {})
+            conn.request("GET", "/salda/bostader?page={}".format(page_n), '', {})
             res = conn.getresponse()
             response = res.read().decode("utf-8")
             soup = BeautifulSoup(response, features="html.parser")
